@@ -8,3 +8,8 @@ name = "Day2"
 [[lean_exe]]
 name = "day2"
 root = "Main"
+
+[[require]]
+name = "LSpec"
+git = "https://github.com/argumentcomputer/LSpec"
+rev = "main"
