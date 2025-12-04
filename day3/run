@@ -1,0 +1,3 @@
+lake update
+lake build
+lake exe day3 input.txt
