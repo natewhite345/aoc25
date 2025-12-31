@@ -1,18 +1,15 @@
 name = "day6"
 version = "0.1.0"
-keywords = ["math"]
-defaultTargets = ["Day6"]
-
-[leanOptions]
-pp.unicode.fun = true # pretty-prints `fun a ↦ b`
-relaxedAutoImplicit = false
-weak.linter.mathlibStandardSet = true
-maxSynthPendingDepth = 3
-
-[[require]]
-name = "mathlib"
-scope = "leanprover-community"
-rev = "v4.27.0-rc1"
+defaultTargets = ["day6"]
 
 [[lean_lib]]
 name = "Day6"
+
+[[lean_exe]]
+name = "day6"
+root = "Main"
+
+[[require]]
+name = "batteries"
+scope = "leanprover-community"
+rev = "main"

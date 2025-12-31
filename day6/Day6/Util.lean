@@ -78,7 +78,7 @@ partial def List.zip_many {α : Type} [Inhabited α ] (rows: List (List α)): Li
     --    rw [List.map_comp]
     --    apply obv
     heads :: List.zip_many tails
-termination_by (rows.map (·.length)).sum
+--termination_by (rows.map (·.length)).sum
 
 #guard
   [[1,2,3],[4,5,6],[7,8,9]].zip_many

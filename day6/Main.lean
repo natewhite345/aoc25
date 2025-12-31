@@ -6,7 +6,7 @@ def main : List String → IO UInt32 :=
       let str := args[0]
       let input ← IO.FS.readFile str
       IO.println s!"Part One: {part1 input}"
-      --IO.println s!"Part Two: {part2 input}"
+      IO.println s!"Part Two: {part2 input}"
       return 0
     else
       IO.println "Must provide filepath"
